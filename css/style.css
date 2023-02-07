@@ -1,0 +1,173 @@
+/* Global */
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif
+}
+
+/* global */
+/* media queries */
+@media (max-width: 767px) {
+    main {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .container .content {
+        padding: 20px;
+    }
+
+    .desktop-i {
+        display: none;
+    }
+
+    .container .content .main-p {
+        width: 295px;
+        margin-bottom: 15px;
+        line-height: 1.6;
+    }
+}
+
+@media (min-width: 768px) {
+
+    main {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 350px);
+        grid-template-rows: 450px;
+    }
+
+    .container .content {
+        padding: 30px;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .container .mobile-i {
+        display: none;
+    }
+
+    .container .desktop-i {
+        width: 350px;
+        height: 450px;
+        border-radius: 10px 0 0 10px;
+        -webkit-border-radius: 10px 0 0 10px;
+        -moz-border-radius: 10px 0 0 10px;
+        -ms-border-radius: 10px 0 0 10px;
+        -o-border-radius: 10px 0 0 10px;
+    }
+
+    .container .content .main-p {
+        line-height: 1.6;
+        width: 240px;
+        margin-bottom: 20px;
+    }
+
+    .container .content .button button {
+        margin-top: 15px;
+    }
+}
+
+
+/* media queries */
+/* styling */
+
+.container {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+
+.container .mobile-i {
+    width: 350px;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+}
+
+.container .content .perfume {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.content p {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+
+.container .content h1 {
+    font-family: 'Fraunces', serif;
+    margin: 10px 0;
+}
+
+.container .content .paragraph {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.container .content .price {
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%)
+}
+
+
+
+.container .content .del-p {
+    position: absolute;
+    top: 10px;
+    left: 140px;
+}
+
+.container .content .button button {
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.container .content .button img {
+    margin-right: 10px;
+}
+
+/* styling */
