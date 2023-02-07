@@ -58,7 +58,7 @@ body {
 
     .container {
         display: grid;
-        grid-template-columns: repeat(2, 350px);
+        grid-template-columns: repeat(2, 330px);
         grid-template-rows: 450px;
     }
 
@@ -72,7 +72,7 @@ body {
     }
 
     .container .desktop-i {
-        width: 350px;
+        width: 330px;
         height: 450px;
         border-radius: 10px 0 0 10px;
         -webkit-border-radius: 10px 0 0 10px;
